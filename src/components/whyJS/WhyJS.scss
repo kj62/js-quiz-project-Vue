@@ -1,0 +1,92 @@
+@import '../../settings.scss';
+
+.whyJS {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 50%;
+    height: 100%;
+    max-height: 860px;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 32px;
+    overflow: auto;
+    background: linear-gradient(to top, #d4e4ef 0%, #bdc1cc 100%);
+
+    .main-text-container{
+        flex: 1.25;
+        overflow: auto;
+
+        p, ul{
+            display: block;
+            width: 80%;
+            height: 100%;
+            margin-left: 140px;
+            text-shadow: #8d8d8d 1px 0 10px;
+            text-align: left;
+        }
+
+        ul {
+            margin-left: 120px;
+        }
+    }
+
+    .main-img{
+        flex: 0.75;
+    }
+}
+
+@media screen and (max-width: 1250px) and (min-width: 700px) {
+    .whyJS {
+        .main-text-container {
+            font-size: 16px;
+
+            p {
+                margin-left: 60px;
+            }
+
+            ul {
+                margin-left: 40px;
+            }
+        }
+
+        .main-img {
+            img {
+                width: 60%;
+                height: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .whyJS {
+        flex-direction: column;
+
+        .main-text-container {
+            font-size: 14px;
+            line-height: 24px;
+
+            p, ul {
+                margin-left: 40px;
+                list-style-type: none;
+            }
+
+            ul {
+                margin-left: 0;
+            }
+        }
+
+        .main-img {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}

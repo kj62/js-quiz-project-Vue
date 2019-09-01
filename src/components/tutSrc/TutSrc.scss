@@ -1,0 +1,57 @@
+@import '../../settings.scss';
+
+.tutSrc{
+    .tutSrc-box{
+        margin-top: 80px;
+
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            font-style: oblique;
+
+            a {
+                text-decoration: none;
+                color: $main-color;
+        
+                &:visited {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+        
+                &:active {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+        
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .tut-link{
+            font-size: 32px;
+            text-shadow: 1px 1px 0px #dbdbdb, 6px 4px 0px rgba(0, 0, 0, 0.15);
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.15);
+                transition: all 0.25s ease;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tutSrc {
+        .tutSrc-box {
+            p {
+                font-size: 16px;
+
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

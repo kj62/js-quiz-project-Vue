@@ -1,0 +1,104 @@
+{
+	"questions":[
+		{
+			"question":"What does the expression below return?\r\nlet fruit = {name: 'apple'};\r\nlet fruititem = {name: 'apple'};\r\nconsole.log(fruit === fruititem);",
+			"answers":[
+				"false",
+				"true",
+				"undefined",
+				"Reference Error"
+			],
+			"correctAnswerIndex": 0
+		},
+		{
+			"question":"What does the expression below return?\r\nlet fruit = {name: 'apple'};\r\nlet fruititem = fruit;\r\nconsole.log(fruit === fruititem);",
+			"answers":[
+				"false",
+				"true",
+				"undefined",
+				"Reference Error"
+			],
+			"correctAnswerIndex": 1
+		},
+		{
+			"question":"How to compare two objects?",
+			"answers":[
+				"obj1 == obj2",
+				"obj1 === obj2",
+				"Create two object property arrays with getOwnPropertynames(obj#) and compare their corresponding elements",
+				"JSON.stringify(obj1) === JSON.stringify(obj2)"
+			],
+			"correctAnswerIndex": 3
+		},
+		{
+			"question":"How to check if object is empty?",
+			"answers":[
+				"if(obj.length == 0)",
+				"if(obj.length === 0)",
+				"JSON.stringify(myObj) === '{}'",
+				"JSON.stringify(myObj) === {}"
+			],
+			"correctAnswerIndex": 2
+		},
+		{
+			"question":"Which expression is incorrect?",
+			"answers":[
+				"obj.prop1",
+				"obj['prop name']",
+				"obj.1prop",
+				"obj['1prop']"
+			],
+			"correctAnswerIndex": 2
+		},
+		{
+			"question":"How it is not recommended to clone an array in Javascript?",
+			"answers":[
+				"let array2 = array1.slice()",
+				"let array2 = array1.concat()",
+				"let array2 = array1",
+				"let array2 = Array.from(array1)"
+			],
+			"correctAnswerIndex": 2
+		},
+		{
+			"question":"What is the result of the expression below?\r\nlet array = new Array(2);\r\nconsole.log(array);",
+			"answers":[
+				"[2, 2]",
+				"[undefined, undefined]",
+				"[null, null]",
+				"[0, 0]"
+			],
+			"correctAnswerIndex": 1
+		},
+		{
+			"question":"What is the result of the expression below?\r\nlet array = new Array(2);\r\nconsole.log(array.length);",
+			"answers":[
+				"0",
+				"undefined",
+				"Reference Error",
+				"2"
+			],
+			"correctAnswerIndex": 3
+		},
+		{
+			"question":"What is the result of the expression below?\r\nNumber('1') - 1 == 0;",
+			"answers":[
+				"true",
+				"false",
+				"null",
+				"undefined"
+			],
+			"correctAnswerIndex": 0
+		},
+		{
+			"question":"What is the result of the expression below?\r\nnew Array(5).toString();",
+			"answers":[
+				"[]",
+				"'[]'",
+				"',,,,'",
+				"'[null,null,null,null,null]'"
+			],
+			"correctAnswerIndex": 2
+		}
+	]
+}
