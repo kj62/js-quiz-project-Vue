@@ -1,6 +1,6 @@
 # JS-quiz-project-Vue
 
-> JS Quiz
+That is an example of JavaScript quiz implemented in the VueJS.
 
 ## Build Setup
 
